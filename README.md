@@ -1,4 +1,4 @@
-# Memeify - Generator Your Favourite Memes
+# Memeify - Generate Your Favourite Memes
 
 Generate your favourite memes using this interactive React app!
 
