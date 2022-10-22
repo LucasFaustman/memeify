@@ -4,7 +4,7 @@ Generate your favourite memes using this interactive React app!
 
 Link to project: https://lucas-memeify.netlify.app/
 
-<img src="https://media.giphy.com/media/DFvpF6JHOl4WHcRd9y/giphy.gif" alt="myplayerio page overview" height="100%" />
+<img src="https://media.giphy.com/media/DFvpF6JHOl4WHcRd9y/giphy.gif" alt="memeify page overview" height="100%" />
 
 ## How It's Made:
 
