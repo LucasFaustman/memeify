@@ -8,13 +8,17 @@ export default function Meme() {
     })
     const [allMemes, setAllMemes] = React.useState([])
     
-    React.useEffect(async () => {
+    React.useEffect( () => {
+
+        async function fetchData() {
         const res = await fetch("https://api.imgflip.com/get_memes")
         const data = await res.json()
         setAllMemes(data.data.memes)
-            .then(res => res.json())
-            .then(data => setAllMemes(data.data.memes))
+        }
+
+        fetchData()
     }, [])
+
     
     function getMemeImage() {
         const randomNumber = Math.floor(Math.random() * allMemes.length)
@@ -61,7 +65,7 @@ export default function Meme() {
                 </button>
             </div>
             <div className="meme">
-                <img src={meme.randomImage} className="meme--image" />
+                <img key={meme.key} src={meme.randomImage} className="meme--image" alt="meme" />
                 <h2 className="meme--text top">{meme.topText}</h2>
                 <h2 className="meme--text bottom">{meme.bottomText}</h2>
             </div>

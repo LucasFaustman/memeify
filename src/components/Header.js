@@ -7,6 +7,7 @@ export default function Header() {
         <header className="header">
             <img 
                 src={trollFace}
+                alt='troll-face'
                 className="header--image"
             />
             <h2 className="header--title">Memeify</h2>
